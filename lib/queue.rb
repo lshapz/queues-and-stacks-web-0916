@@ -1,19 +1,18 @@
-require_relative 'stack'
+# require_relative 'stack'
 
 class Queue
-  attr_accessor :stack1, :stack2
+  attr_accessor :me
 
   def initialize 
-    @stack1 = Stack.new
-    @stack2 = Stack.new
+    @me = []
   end
 
   def enqueue(item)
-    @stack1.me.push(item)
+    @me.push(item)
   end
 
   def dequeue
-    @stack1.me.shift
+    @me.shift
   end
 
 end
